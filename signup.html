@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Signup Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb, #d4a7f0);
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .tab-buttons {
+      display: flex;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      transition: 0.3s;
+    }
+
+    .tab-buttons button.active {
+      background: linear-gradient(to right, #1e6ac7, #1c5386);
+      color: white;
+      font-weight: bold;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      font-size: 14px;
+      
+     transition: all 0.3s ease;
+    }
+
+    
+    .form-container button.signup-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #005bea, #052077);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .form-container .bottom-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .form-container .bottom-text a {
+      color: #0072ff;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Signup Form</h2>
+    <div class="tab-buttons">
+      <button>Login</button>
+      <button class="active">Signup</button>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm password" required>
+      <button type="submit" class="signup-btn">Signup</button>
+    </form>
+
+    <div class="bottom-text">
+      Already have an account? <a href="#">Login</a>
+    </div>
+  </div>
+
+</body>
+</html>
